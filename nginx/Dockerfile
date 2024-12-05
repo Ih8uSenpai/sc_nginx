@@ -7,6 +7,7 @@ COPY ./nginx/nginx.conf /etc/nginx/nginx.conf
 # Копируем папку с файлами для раздачи (если нужно)
 COPY ./nginx/uploads /usr/share/nginx/uploads
 
+RUN mkdir -p /usr/share/nginx/uploads && chmod -R 777 /usr/share/nginx/uploads
 # Открываем порт 80
 EXPOSE 80
 
