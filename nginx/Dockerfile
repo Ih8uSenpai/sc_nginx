@@ -5,7 +5,7 @@ FROM nginx:latest
 COPY nginx.conf /etc/nginx/nginx.conf
 
 # Копируем папку с файлами для раздачи (если нужно)
-COPY ./uploads /usr/share/nginx/uploads
+COPY uploads /usr/share/nginx/uploads
 
 # Открываем порт 80
 EXPOSE 80
